@@ -18,28 +18,31 @@
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
+	<h1 class="visually-hidden">My portfolio</h1>
 	<header class="header header__wrap">
-		<div class="image header__image_effect"></div>
-		<h1 class="visually-hidden">My portfolio</h1>
-		<div class="conteiner conteiner_big">
-			<nav class="navigation header__navigation">
-				<a href="#" class="logo header__logo"><img src="img/logo.png" alt="Logo" class="image header__logo_image"></a>
-				<ul class="list header__list">
-					<li class="item header__item"><a href="#">Start</a></li>
-					<li class="item header__item"><a href="#">About Me</a></li>
-					<li class="item header__item"><a href="#">Works</a></li>
-					<li class="item header__item"><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-			<div class="conteiner conteiner_small">
-				<div class="caption header__caption">
-					<p class="representation header__representation">May I introduce myself?</p>
-					<hr class="line header__line">
-					<p class="specialty header__specialty">Frontend Design | UI/UX Design</p>
-				</div>
+		<!-- Slider -->
+		<div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide swiper-slide_1">
+		      	<img src="img/foto-1.jpeg" alt="">
+		      </div>
+		      <div class="swiper-slide swiper-slide_2">
+		      	<img src="img/foto-2.jpeg" alt="">
+		      </div>
+		      <div class="swiper-slide swiper-slide_3">
+		      	<img src="img/foto-1.jpeg" alt="">
+		      </div>
 			</div>
-			<a href="#" class="btn header__btn">Go ahead</a>
-		</div>
+			 <!-- Add Pagination -->
+    		<div class="swiper-pagination swiper-pagination-white"></div>
+    		<!-- Add Arrows -->
+		    <div class="swiper-button-next swiper-button-white"></div>
+		    <div class="swiper-button-prev swiper-button-white"></div>
+	    </div>
+	    <!--End of Slider -->
 	</header>
+
+
+	<script src="js/script.js"></script>
 </body>
 </html>
