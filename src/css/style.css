@@ -18,10 +18,87 @@ html,
 		height: 1px;
 		margin: -1px;
 	}
+	.conteiner {
+		position: relative;
+		width: 1170px;
+		margin: 0 auto;
+	}
 	
 
 
 	/* HEADER */
+	.header__wrap {
+	    position: relative;
+	}
+	.header__line {
+		position: absolute;
+		width: 100%;
+		height: 127px;
+		border-bottom: 1px solid #363636;
+		z-index: 10;
+	}
+	.header__navigation {
+		position: absolute;
+		width: 100%;
+		top: 30px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-ms-align-items: center;
+		align-items: stretch;
+		z-index: 10;
+	}
+	.header__site_navigation {
+		width: 670px;
+		padding: 0;
+		margin: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+		align-items: stretch;
+		list-style: none;
+	}
+	.header__site_navigation_item {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.header__site_navigation_item .site__navigation_link {
+		text-decoration: none;
+		font-family: 'Raleway', sans-serif;
+		line-height: 98px;
+		color: #fff;
+	}
+	.header__site_navigation_item:hover > .site__navigation_link {
+		line-height: 97px;
+		font-weight: 600;
+		color: #ff5722;
+		border-bottom: 1px solid #ff5722;
+	}  /*
+	.header__site_navigation_item:hover + .header__site_navigation {
+		width: 680px;
+	}  */
 
 
 	/* slider */
@@ -32,11 +109,24 @@ html,
 	  position: relative;
 	  width: 100%;
 	  height: 49.61vw!important;
-	  background: #a1a1a1;
+	  background-position: center;
+      background-size: cover;
+	  background-color: #a1a1a1;
     }
+    .swiper-slide_1 {
+    	background-image: url(../img/foto-1.jpeg);
+    }
+    .swiper-slide_2 {
+    	background-image: url(../img/foto-2.jpeg);
+    }
+    .swiper-slide_3 {
+    	background-image: url(../img/foto-1.jpeg);
+    }
+    /*
     .swiper-slide img {
     	width: 100%;
     }
+	*/
     .swiper-pagination-bullet {
     	background: #fff!important;
     	opacity: 1!important;
