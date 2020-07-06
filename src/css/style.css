@@ -47,11 +47,13 @@ html,
     
     .swiper-button-white {
     	background: #ff5722!important;
+    	width: 1.41vw!important;
+    	height: 2.29vw!important;
     }
     .swiper-button-disabled {
     	background: #b4b4b4!important;
     }
      .swiper-button-white::after {
-    	font-size: 30px!important;
+    	font-size: 1.56vw!important;
     }
    
